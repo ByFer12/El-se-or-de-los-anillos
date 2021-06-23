@@ -15,24 +15,30 @@ public class Trasgo extends Bestia {
     public Trasgo(String nombre, int vida, int armadura, int maxAtaque) {
         super(nombre, 325, 250, maxAtaque);
     }
-
+    /**
+     * Metodo de ataque especial
+     * @return 
+     */
     @Override
     public int ataqueEspecial() {
         if(dad1>dad2){
             maxAtaque=dad1;
-            return (int)(maxAtaque+(maxAtaque*0.2));
+            return (int)(maxAtaque+(maxAtaque*0.15));
         }
         if(dad2>dad1){
             maxAtaque=dad2;
-            return (int)(maxAtaque+(maxAtaque*0.2));
+            return (int)(maxAtaque+(maxAtaque*0.15));
             
         }
         if(dad1==dad2){
             return 0;
         }
-        return (int)(maxAtaque+(maxAtaque*0.2));
+        return (int)(maxAtaque+(maxAtaque*0.15));
     }
-
+    /**
+     * Control de vida 
+     * @param daño 
+     */
     @Override
     public void daño(int daño) {
         this.vida-=daño;
