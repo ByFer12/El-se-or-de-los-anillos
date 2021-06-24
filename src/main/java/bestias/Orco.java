@@ -10,7 +10,7 @@ package bestias;
 public class Orco extends Bestia{
 
     public Orco( int vida, int armadura, int maxAtaque) {
-        super( 300, 220, maxAtaque);
+        super( 500, 220, maxAtaque);
     }
     
     public Orco(String nombre){

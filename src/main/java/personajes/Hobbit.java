@@ -13,7 +13,7 @@ package personajes;
 public class Hobbit extends Heroe{
 
     public Hobbit(int vida, int armadura, int maxAtaque) {
-        super( 200, 220, maxAtaque);
+        super( 400, 220, maxAtaque);
     }
     public Hobbit(String nombre){
         super(nombre);

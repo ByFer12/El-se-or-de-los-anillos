@@ -13,7 +13,7 @@ package bestias;
 public class Trasgo extends Bestia {
 
     public Trasgo( int vida, int armadura, int maxAtaque) {
-        super( 325, 250, maxAtaque);
+        super( 525, 250, maxAtaque);
     }
     
     public Trasgo(String nombre){

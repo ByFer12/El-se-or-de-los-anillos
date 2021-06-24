@@ -3,7 +3,7 @@ package personajes;
 public class Humano extends Heroe {
 
     public Humano(int vida, int armadura, int maxAtaque) {
-        super(180, 200, maxAtaque);
+        super(380, 200, maxAtaque);
     }
     public Humano(String nombre){
         super(nombre);

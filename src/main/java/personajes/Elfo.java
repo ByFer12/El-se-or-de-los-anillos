@@ -8,7 +8,7 @@ package personajes;
 public class Elfo extends Heroe {
 
     public Elfo(int vida, int armadura, int maxAtaque) {
-        super(250, 210, maxAtaque);
+        super(450, 210, maxAtaque);
     }
 
     public Elfo(String nombre) {
