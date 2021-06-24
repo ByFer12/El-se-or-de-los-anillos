@@ -17,8 +17,12 @@ public abstract class Heroe extends Ente {
      * @param maxAtaque
      * @param dado
      */
-    public Heroe(String nombre, int vida, int armadura, int maxAtaque) {
-        super(nombre, vida, armadura, maxAtaque);
+  
+    public Heroe( int vida, int armadura, int maxAtaque) {
+        super( vida, armadura, maxAtaque);
+    }
+    public Heroe(String nombre){
+        super(nombre);
     }
 
     /**

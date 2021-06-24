@@ -9,8 +9,12 @@ package bestias;
 
 public class Orco extends Bestia{
 
-    public Orco(String nombre, int vida, int armadura, int maxAtaque) {
-        super(nombre, 300, 220, maxAtaque);
+    public Orco( int vida, int armadura, int maxAtaque) {
+        super( 300, 220, maxAtaque);
+    }
+    
+    public Orco(String nombre){
+        super(nombre);
     }
 
         /**
@@ -38,10 +42,7 @@ public class Orco extends Bestia{
      * Daño que le provocan
      * @param daño 
      */
-    @Override
-    public void daño(int daño) {
-        this.vida-=daño;
-    }
+
     }
 
  

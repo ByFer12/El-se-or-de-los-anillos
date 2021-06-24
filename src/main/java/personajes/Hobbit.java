@@ -12,8 +12,11 @@ package personajes;
  */
 public class Hobbit extends Heroe{
 
-    public Hobbit(String nombre, int vida, int armadura, int maxAtaque) {
-        super(nombre, 200, 220, maxAtaque);
+    public Hobbit(int vida, int armadura, int maxAtaque) {
+        super( 200, 220, maxAtaque);
+    }
+    public Hobbit(String nombre){
+        super(nombre);
     }
 
     @Override
@@ -33,9 +36,5 @@ public class Hobbit extends Heroe{
         return maxAtaque;
     }
 
-    @Override
-    public void daño(int daño) {
-        this.vida-=daño;
-    }
 
 }

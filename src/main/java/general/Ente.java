@@ -24,33 +24,30 @@ public abstract class Ente {
     /*
     Constructor general
      */
-    public Ente(String nombre, int vida, int armadura, int maxAtaque) {
-        this.nombre = nombre;
+
+    public Ente(int vida, int armadura, int maxAtaque) {
         this.vida = vida;
         this.armadura = armadura;
         this.maxAtaque = maxAtaque;
-         }
+    }
+
+    public Ente(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
 
     /**
      * Metodos getters y setters
      *
      * @return
      */
-
     public String getNombre() {
         return nombre;
     }
 
     public int getVida() {
-        return vida;
-    }
-
-    public int getArmadura() {
-        return armadura;
-    }
-
-    public void setArmadura(int armadura) {
-        this.armadura = armadura;
+        return vida+armadura;
     }
 
     public int getMaxAtaque() {
@@ -73,6 +70,14 @@ public abstract class Ente {
     
     public abstract int ataqueEspecial();
 
-    public abstract void daño(int daño);
+    public  void daño(int daño){
+        this.vida-=daño;
+    }
 
+    @Override
+    public String toString() {
+        return "Nombre: "+nombre+" Vida: "+vida;
+    }
+    
+    
 }

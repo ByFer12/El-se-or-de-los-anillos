@@ -12,8 +12,13 @@ package bestias;
  */
 public class Trasgo extends Bestia {
 
-    public Trasgo(String nombre, int vida, int armadura, int maxAtaque) {
-        super(nombre, 325, 250, maxAtaque);
+    public Trasgo( int vida, int armadura, int maxAtaque) {
+        super( 325, 250, maxAtaque);
+    }
+    
+    public Trasgo(String nombre){
+        super(nombre);
+    
     }
     /**
      * Metodo de ataque especial
@@ -39,9 +44,7 @@ public class Trasgo extends Bestia {
      * Control de vida 
      * @param daño 
      */
-    @Override
-    public void daño(int daño) {
-        this.vida-=daño;
-    }
+
+
 
 }

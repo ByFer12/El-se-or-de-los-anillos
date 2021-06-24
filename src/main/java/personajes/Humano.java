@@ -2,10 +2,14 @@ package personajes;
 
 public class Humano extends Heroe {
 
-    public Humano(String nombre, int vida, int armadura, int maxAtaque) {
-        super(nombre, 180, 200, maxAtaque);
+    public Humano(int vida, int armadura, int maxAtaque) {
+        super(180, 200, maxAtaque);
     }
-
+    public Humano(String nombre){
+        super(nombre);
+    }
+ 
+    
 
     @Override
     public int ataqueEspecial() {
@@ -24,9 +28,6 @@ public class Humano extends Heroe {
         return maxAtaque;
     }
 
-    @Override
-    public void daño(int daño) {
-        this.vida-=daño;
-    }
+
 
 }
