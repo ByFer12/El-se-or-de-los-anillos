@@ -11,6 +11,11 @@ import personajes.*;
  */
 public class Manejador1Batalla {
 
+    public Manejador1Batalla() {
+        cantidadGuerreros();
+        batalla();
+    }
+
     private Humano[] humanos = new Humano[1];
     private Hobbit[] hobbits = new Hobbit[1];
     private Elfo[] elfos = new Elfo[2];
@@ -78,7 +83,7 @@ public class Manejador1Batalla {
             daño = trasgos[1].ataque();
             hobbits[0].daño(daño);
             System.out.println(trasgos[1].getNombre() + " Ha realizado un ataque de " + daño + " a " + hobbits[0].getNombre());
-
+            System.out.println("Precione enter para continuar");
             try {
                 System.in.read();
             } catch (Exception e) {
@@ -87,8 +92,21 @@ public class Manejador1Batalla {
             }
 
             veces++;
-        } while (veces < 3);
+        } while (veces < 2);
 
+        System.out.println("RESULTADOS FINALES");
+        System.out.println("Heroes");
+        System.out.println("Nombre: " + humanos[0].getNombre() + ": Vida: " + humanos[0].getVida());
+        System.out.println("Nombre: " + hobbits[0].getNombre() + ": Vida: " + hobbits[0].getVida());
+        System.out.println("Nombre: " + elfos[0].getNombre() + ": Vida: " + elfos[0].getVida());
+        System.out.println("Nombre: " + elfos[1].getNombre() + ": Vida: " + elfos[1].getVida());
+
+        System.out.println("\n");
+        System.out.println("Bestias");
+        System.out.println("Nombre: " + orcos[0].getNombre() + ": Vida: " + orcos[0].getVida());
+        System.out.println("Nombre: " + orcos[1].getNombre() + ": Vida: " + orcos[1].getVida());
+        System.out.println("Nombre: " + trasgos[0].getNombre() + ": Vida: " + trasgos[0].getVida());
+        System.out.println("Nombre: " + trasgos[1].getNombre() + ": Vida: " + trasgos[1].getVida());
     }
 
 }

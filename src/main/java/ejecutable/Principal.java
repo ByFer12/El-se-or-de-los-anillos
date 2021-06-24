@@ -5,6 +5,8 @@
  */
 package ejecutable;
 
+import manejadores.Manejador1Batalla;
+
 /**
  *
  * @author Sammy Guergachi <sguergachi at gmail.com>
@@ -15,7 +17,7 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Manejador1Batalla m1= new Manejador1Batalla();
     }
     
 }

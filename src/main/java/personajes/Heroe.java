@@ -40,8 +40,8 @@ public abstract class Heroe extends Ente {
        @Override
     public int ataque() {
         int golpe=0;
-         dado1 = (int) (Math.random() * 100 + 1);
-         dado2 = (int) (Math.random() * 100 + 1);
+         dado1 = (int) (Math.random() * 40 + 1);
+         dado2 = (int) (Math.random() * 40 + 1);
         if (dado1 > dado2) {
             golpe = dado1;
             return golpe;

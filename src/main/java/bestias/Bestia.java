@@ -31,8 +31,8 @@ public abstract class Bestia extends Ente {
     @Override
     public int ataque() {
         int golpe = 0;
-        dad1 = (int) (Math.random() * 90 + 1);
-        dad2 = (int) (Math.random() * 90 + 1);
+        dad1 = (int) (Math.random() * 30 + 1);
+        dad2 = (int) (Math.random() * 30 + 1);
         if (dad1 > dad2) {
             golpe = dad1;
             return golpe;
